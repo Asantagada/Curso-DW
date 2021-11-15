@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fuente para iconos y tipografia -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <!-- Animaciones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <h1>Psicoterin</h1>
+        <img src="../multimedia/ARBONDALA.png" alt="Logo" >
+        <nav id="barraNavegacion">
+            <ul id="listaNavegacion" >
+                <li><a href="../index.html">Indice, </a></li>
+                <li><a href="sobreNosotras.html">Sobre Nosotras, </a></li>
+                <li><a href="medicinaIntegral.html">Medicina Integral, </a></li>
+                <li><a href="psicoterapias.html">Psicoterapias Integradoras, </a></li>
+                <li><a href="talleres.html">Talleres</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- MAIN -->
+    <main>
+        <!-- TITULO MAIN -->
+        <h2>Formulario de Contacto</h2>
+        <form id="formularioContacto" action=" " method="POST" enctype="application/x-www-form-urlencoded">
+            <label for="Nombre">Nombre 
+                <input type="text" placeholder="Nombre" required>
+            </label>
+            <label for="Mail">Email  
+                <input type="email" placeholder="Email" >
+            </label>
+            <label for="Consulta">Cual es el tema de su consulta: 
+                <br>
+                <select name="Temas" >
+                    <option value= "Alimentacion">Alimentacion Ayurvedica</option>
+                    <option value="Meditacion">Meditacion</option>
+                    <option value="Psicopedagogia">Psicopedagogia Integral</option>
+                    <option value="Otro">Otro...</option>
+                </select>
+            </label>
+            <label for="areaDeTexto" id="areaDeTexto">Detallanos el tema de tu consulta
+                <TEXTarea name="areadetexto" id="" cols="30" rows= "15" placeholder="Detallenos su consulta">
+                </TEXTarea>
+            </label>
+            <label for="Extra">Desea recibir informacion adicional a su consulta:
+            </label>
+            <label for="radio-si">Si
+                <input type="radio" name="Extra" value="Si" id = "Extra">
+            </label>
+            <label for="radio-no">No
+                <input type="radio" name="Extra" value="No" id = "Extra">
+            </label>
+            <div id="areaBotonesForm">
+                <input class= "botonesForm" type="reset" value = "Borrar">
+                <input class= "botonesForm" type="submit" value="Enviar"> 
+            </div>
+        </form>
+    </main>
+    <!-- FOOTER -->
+    <footer class ="estiloFooter">
+        <div class = "presentacionFooter">
+            <div>
+                <img src="../multimedia/susi.jpg" alt="">
+                <h5>Susana Hebe Vallejos</h5>
+            </div>
+            <div>
+                <img src="../multimedia/cris.jpg" alt="">
+                <h5>Maria Cristina Jorrat</h5>
+            </div>
+        </div>
+        <div class = "ubicacionesFooter">
+            <sub>Conoce Nuestras Ubicaciones</sub>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13029.383592428007!2d-59.14447728424563!3d-35.272525333115446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bda7eda23a8e83%3A0xe38b03e48e589265!2sLaguna%20de%20Lobos%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1627319279830!5m2!1ses!2sar"  loading="lazy">
+            </iframe>
+        </div>
+        <div class= "contactoFooter">
+            <a id="linkContacto" href="../html/contacto.html">Contacto</a>
+            <div class = "redesFooter">
+            <a href=https://www.whatsapp.com/?lang=es "><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
