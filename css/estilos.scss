@@ -1,0 +1,379 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    background-image: repeating-linear-gradient(250deg, white, #e06be0);
+}
+// /* ---------------------------------------------------- */
+// /* Header */
+header {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3fr 2fr;
+    grid-template-rows: 2fr 2fr 1fr;
+    grid-template-areas: "logo title title" "logo title title" "logo nav nav";
+    h1 {
+        grid-area: title;
+        width: 100%;
+        text-align: center;
+        font-size: 7rem; 
+        font-family: 'Dancing Script', cursive;
+        letter-spacing: 0.5vw;
+        background-image: url(../multimedia/hojasverdes.jpg);
+        background-position: center;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        animation: flash;
+        animation-duration: 3s;
+        color: white;
+        text-shadow: 0.3rem 0.3rem black;
+    }
+    img {
+        grid-area: logo;
+        width: 100%;
+        height: 100%;
+    }
+} 
+#barraNavegacion{
+    grid-area: nav;
+    width: 100%;
+    height: 100%;
+    #listaNavegacion{
+        width: auto;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        background-image: repeating-linear-gradient(to right, rgba(189, 168, 101, 0.247), #b9821b);
+        list-style: none;
+        margin: 0;
+        li a{
+            width: 100%;
+            height: 100%;
+            font-style: italic;
+            text-align:center; 
+            font-size:1.5rem;
+            color: black;
+            transition: font-size 1.5s;
+            font-weight: 400;
+            :hover{  
+                font-size: 1.8rem;
+            }
+        }
+    }
+}
+
+/* ------------------------------------------------------- */
+/* MAIN  */
+main{
+    padding: 1% 0.3%;
+    margin-top: 2%;
+    animation: fadeInUp;
+    animation-duration: 1s;
+    h2{
+        text-align: center;
+        font-family: 'Dancing Script', cursive;
+        font-size: 3rem;
+        text-shadow: -0.2rem -0.1px rgba(0, 0, 0, 0.336) ;
+    }
+}
+/* ---------------------------------------------- */
+/* SECCION 1 DEL MAIN */
+.segundoContenedor{
+    width: 100%;
+    padding-bottom: 1%;
+    display: grid;
+    grid-template-areas: "imagen audio" "imagen texto" "imagen texto";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 2fr 2fr;
+    align-items: center;
+    justify-content: center;
+    .slide{
+        grid-area: imagen;
+        width:100%;
+        height:100%;
+        padding: 0 2%;
+        .carousel-inner{
+            width: 100%;
+            height: 100%;
+            .carousel-item img{
+                height: 30rem;
+                border-radius: 50%;
+            }
+        }
+    }
+    audio{
+        grid-area: audio;
+    }
+    p {
+        grid-area: texto;
+        font-family: 'Dancing Script', cursive;
+        font-size: 1.7rem;
+        padding:2%;
+        font-weight: 700;
+    }
+}
+/* -------------------------------------- */
+/* Seccion 2 del index */
+#index2 {
+    margin-top: 3%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    justify-content: space-between;
+    background-image: repeating-linear-gradient(to right, rgba(189, 168, 101, 0.247), #b9821b);
+    border: 1.3rem solid;
+    border-image: url(../multimedia/hojasverdes.jpg) 20 round;
+    font-size: 1.2rem;
+    justify-self: auto;
+    div {
+        padding: 1.5%;
+    }
+    h3 {
+        font-size: 3rem;
+        text-align: center;
+        font-family: 'Dancing Script', cursive;
+    }
+    p{
+        font-style: italic;
+    }
+}
+/* ------------------------------------------------- */
+/* TABLAS */
+.tabla{
+    background-color: rgba(233, 121, 17, 0.726);
+    border-style: dotted;
+    border-color: rgb(43, 204, 43);
+    li{
+        list-style: none;
+    }
+}    
+th{
+    border-style: none;
+    border-color: black; 
+    font-style: italic;
+    font-size: auto;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+td{
+    border-style: none;
+    border-color: black; 
+}
+.tablasContenido{
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+    font-weight: bold;
+    font-size: medium;
+    padding: 1rem;
+    border: 1rem solid transparent;
+    border-image: url(../multimedia/hojasverdes.jpg) 15 round;
+    background-color: rgb(185, 130, 27);
+    overflow: auto;
+    width:25%;
+}
+/* ---------------------------------- */
+/* FOOTER */
+footer{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    bottom: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-top: 5%;
+    border-top: 1.3rem solid;
+    border-image: url(../multimedia/hojasverdes.jpg) 25 round;   
+}
+.presentacionFooter{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.presentacionFooter div{
+    display:flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: end;
+    align-items: center;
+}
+.presentacionFooter div img{
+    width:8.3rem;
+    height: 8.3rem;
+    height: 80%;
+    border-radius: 50%;
+}
+.presentacionFooter div h5{
+    font-size: 1rem;
+}
+.ubicacionesFooter{
+    width: 100% ;
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 1fr 4fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactoFooter{
+    width: 100%;
+    text-align: center;
+}
+#linkContacto {
+    width: 25%;
+    height: 40%;
+    text-align: center;
+    font-size: 3rem;
+}
+.redesFooter{
+    width:100%;
+    height: 60%;
+    display: flex;
+    padding-bottom: 0;
+    flex-direction:row;
+    align-items:flex-end;
+    justify-content: space-between;
+    font-size: 4rem;
+    font-weight: 700;
+
+}
+.fa-whatsapp{
+    color: rgb(24, 167, 24);
+}
+.fa-facebook{
+    color: blue;
+}
+.fa-twitter{
+    color:rgb(3, 161, 214);
+}
+.fa-youtube{
+    color: red;
+}
+/* ------------------------------------- */
+/* Estilos de la seccion Sobre Nosotras */
+.sobreNos_presentacion{
+    display: grid;
+    grid-template-areas: "foto titulo" "foto texto" "foto texto";
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 10% 45% 45%;
+    justify-content: center;
+    align-items: center;
+    margin: 3% 0;
+    height: 30rem;
+}
+.sobreNos_presentacion img{
+    grid-area: foto;
+    width: 100%;
+    height: 100%;
+    border-radius:50%;
+    justify-self: center;
+}
+.sobreNos_presentacion h3{
+    grid-area: titulo;
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    text-shadow: -0.2rem -0.1px rgba(0, 0, 0, 0.336) ;
+}
+.sobreNos_presentacion p{
+    grid-area: texto;
+    text-align: center;
+    font-style: italic;
+    font-size: 1.1rem;
+    font-family: 'Indie Flower', cursive;
+}
+/* ------------------------------ */
+/* Estilos de la seccion Medicina Integral */
+#medicinaIntegral{
+    margin: 1% auto;
+    width: 100%;
+    height: 100%;
+}
+#medicinaIntegral p{
+    font-style: italic;
+    font-size: 1.1rem;
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+    margin: 0;
+    padding: 1%;
+    background-image: repeating-linear-gradient(to right, rgba(189, 168, 101, 0.247), #b9821b);
+    border: 2rem solid;
+    border-image: url(../multimedia/hojasverdes.jpg) 25 round;
+}
+/* -------------------------------------- */
+/* Estilos para la seccion Psicoterapias Integradoras */
+#psicoterapias{
+    margin: 1% auto;
+    width: 100%;
+    height: 100%;
+}
+#psicoterapias p{
+    font-style: italic;
+    font-size: 1.1rem;
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+    margin: 0;
+    padding: 1%;
+    background-image: repeating-linear-gradient(to right, rgba(189, 168, 101, 0.247), #b9821b);
+    border: 1.3rem solid;
+    border-image: url(../multimedia/hojasverdes.jpg) 25 round;
+}
+/* ----------------------------------------------------- */
+/* Seccion de contacto */
+#formularioContacto{
+    margin: 1% auto;
+    width:30%;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+#formularioContacto label{
+    margin:1% 0%;
+}
+#areaDeTexto{
+    display: flex;
+    flex-direction: column;
+}
+#areaBotonesForm{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 120%;
+}
+.botonesForm{
+    width:50%;
+}
+
+/* --------------------------------- */
+/* Mobile First */
+@media only screen and (max-width:768px){
+    #index2{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 25% 25% 25% 25%;
+        justify-content: space-evenly;
+        background-image: repeating-linear-gradient(to right, rgba(189, 168, 101, 0.247), #b9821b);
+        border: 1rem solid;
+        border-image: url(../multimedia/hojasverdes.jpg) 20 round;
+        font-size: 1rem;
+        justify-self: auto;
+    }
+    #index2 h2 {
+        font-size: 2rem;
+        text-align: center;
+        font-family: 'Dancing Script', cursive;
+        padding: 1%
+    }
+    #index2 p{
+        font-style: italic;
+    }
+}
+
+
+
+
