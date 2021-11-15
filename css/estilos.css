@@ -7,14 +7,14 @@ body {
   background-image: repeating-linear-gradient(250deg, white, #e06be0);
 }
 
-header {
+.header {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 3fr 2fr;
   grid-template-rows: 2fr 2fr 1fr;
   grid-template-areas: "logo title title" "logo title title" "logo nav nav";
 }
-header h1 {
+.header .header__h1 {
   grid-area: title;
   width: 100%;
   text-align: center;
@@ -32,18 +32,17 @@ header h1 {
   color: white;
   text-shadow: 0.3rem 0.3rem black;
 }
-header img {
+.header .header__img {
   grid-area: logo;
   width: 100%;
   height: 100%;
 }
-
-#barraNavegacion {
+.header .header__barraNavegacion {
   grid-area: nav;
   width: 100%;
   height: 100%;
 }
-#barraNavegacion #listaNavegacion {
+.header .header__barraNavegacion .header__barraNavegacion__listaNavegacion {
   width: auto;
   height: 100%;
   display: flex;
@@ -54,7 +53,7 @@ header img {
   list-style: none;
   margin: 0;
 }
-#barraNavegacion #listaNavegacion li a {
+.header .header__barraNavegacion .header__barraNavegacion__listaNavegacion li a {
   width: 100%;
   height: 100%;
   font-style: italic;
@@ -64,19 +63,19 @@ header img {
   transition: font-size 1.5s;
   font-weight: 400;
 }
-#barraNavegacion #listaNavegacion li a :hover {
+.header .header__barraNavegacion .header__barraNavegacion__listaNavegacion li a:hover {
   font-size: 1.8rem;
 }
 
 /* ------------------------------------------------------- */
 /* MAIN  */
-main {
+.main {
   padding: 1% 0.3%;
   margin-top: 2%;
   animation: fadeInUp;
   animation-duration: 1s;
 }
-main h2 {
+.main .main__h2 {
   text-align: center;
   font-family: "Dancing Script", cursive;
   font-size: 3rem;
@@ -85,7 +84,7 @@ main h2 {
 
 /* ---------------------------------------------- */
 /* SECCION 1 DEL MAIN */
-.segundoContenedor {
+.main__index1 {
   width: 100%;
   padding-bottom: 1%;
   display: grid;
@@ -95,24 +94,24 @@ main h2 {
   align-items: center;
   justify-content: center;
 }
-.segundoContenedor .slide {
+.main__index1 .slide {
   grid-area: imagen;
   width: 100%;
   height: 100%;
   padding: 0 2%;
 }
-.segundoContenedor .slide .carousel-inner {
+.main__index1 .slide .carousel-inner {
   width: 100%;
   height: 100%;
 }
-.segundoContenedor .slide .carousel-inner .carousel-item img {
+.main__index1 .slide .carousel-inner .carousel-item img {
   height: 30rem;
   border-radius: 50%;
 }
-.segundoContenedor audio {
+.main__index1 .main__index1__audio {
   grid-area: audio;
 }
-.segundoContenedor p {
+.main__index1 .main__index1__p {
   grid-area: texto;
   font-family: "Dancing Script", cursive;
   font-size: 1.7rem;
@@ -122,7 +121,7 @@ main h2 {
 
 /* -------------------------------------- */
 /* Seccion 2 del index */
-#index2 {
+.main__index2 {
   margin-top: 3%;
   display: grid;
   grid-template-columns: 50% 50%;
@@ -134,15 +133,15 @@ main h2 {
   font-size: 1.2rem;
   justify-self: auto;
 }
-#index2 div {
+.main__index2 .main__index2__contenedores {
   padding: 1.5%;
 }
-#index2 h3 {
+.main__index2 .main__index2__contenedores .main__index2__contenedores__titulo {
   font-size: 3rem;
   text-align: center;
   font-family: "Dancing Script", cursive;
 }
-#index2 p {
+.main__index2 .main__index2__contenedores .main__index2__contenedores__texto {
   font-style: italic;
 }
 
@@ -185,7 +184,7 @@ td {
 
 /* ---------------------------------- */
 /* FOOTER */
-footer {
+.footer {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -196,33 +195,28 @@ footer {
   border-top: 1.3rem solid;
   border-image: url(../multimedia/hojasverdes.jpg) 25 round;
 }
-
-.presentacionFooter {
+.footer .footer__presentacion {
   width: 100%;
   display: flex;
   flex-direction: row;
 }
-
-.presentacionFooter div {
+.footer .footer__presentacion .footer__presentacion__contenedor {
   display: flex;
   flex-direction: column;
   width: 50%;
   justify-content: end;
   align-items: center;
 }
-
-.presentacionFooter div img {
+.footer .footer__presentacion .footer__presentacion__contenedor__img {
   width: 8.3rem;
   height: 8.3rem;
   height: 80%;
   border-radius: 50%;
 }
-
-.presentacionFooter div h5 {
+.footer .footer__presentacion .footer__presentacion__contenedor__titulo {
   font-size: 1rem;
 }
-
-.ubicacionesFooter {
+.footer .footer__ubicaciones {
   width: 100%;
   display: grid;
   grid-template-columns: 1;
@@ -230,20 +224,17 @@ footer {
   justify-content: center;
   align-items: center;
 }
-
-.contactoFooter {
+.footer .footer__contacto {
   width: 100%;
   text-align: center;
 }
-
-#linkContacto {
+.footer .footer__contacto .footer__contacto__linkContacto {
   width: 25%;
   height: 40%;
   text-align: center;
   font-size: 3rem;
 }
-
-.redesFooter {
+.footer .footer__contacto .footer__contacto__redes {
   width: 100%;
   height: 60%;
   display: flex;
@@ -254,20 +245,16 @@ footer {
   font-size: 4rem;
   font-weight: 700;
 }
-
-.fa-whatsapp {
+.footer .footer__contacto .footer__contacto__redes .fa-whatsapp {
   color: #18a718;
 }
-
-.fa-facebook {
+.footer .footer__contacto .footer__contacto__redes .fa-facebook {
   color: blue;
 }
-
-.fa-twitter {
+.footer .footer__contacto .footer__contacto__redes .fa-twitter {
   color: #03a1d6;
 }
-
-.fa-youtube {
+.footer .footer__contacto .footer__contacto__redes .fa-youtube {
   color: red;
 }
 
