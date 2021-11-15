@@ -260,7 +260,7 @@ td {
 
 /* ------------------------------------- */
 /* Estilos de la seccion Sobre Nosotras */
-.sobreNos_presentacion {
+.main__sobreNos__presentacion {
   display: grid;
   grid-template-areas: "foto titulo" "foto texto" "foto texto";
   grid-template-columns: 40% 60%;
@@ -270,24 +270,21 @@ td {
   margin: 3% 0;
   height: 30rem;
 }
-
-.sobreNos_presentacion img {
+.main__sobreNos__presentacion .main__sobreNos__presentacion__img {
   grid-area: foto;
   width: 100%;
   height: 100%;
   border-radius: 50%;
   justify-self: center;
 }
-
-.sobreNos_presentacion h3 {
+.main__sobreNos__presentacion .main__sobreNos__presentacion__titulo {
   grid-area: titulo;
   font-size: 3rem;
   text-align: center;
   font-family: "Dancing Script", cursive;
   text-shadow: -0.2rem -0.1px rgba(0, 0, 0, 0.336);
 }
-
-.sobreNos_presentacion p {
+.main__sobreNos__presentacion .main__sobreNos__presentacion__texto {
   grid-area: texto;
   text-align: center;
   font-style: italic;
@@ -296,14 +293,13 @@ td {
 }
 
 /* ------------------------------ */
-/* Estilos de la seccion Medicina Integral */
-#medicinaIntegral {
+/* Estilos de la seccion con el main corto */
+.main__corto {
   margin: 1% auto;
   width: 100%;
   height: 100%;
 }
-
-#medicinaIntegral p {
+.main__corto .main__corto__p {
   font-style: italic;
   font-size: 1.1rem;
   font-family: "Indie Flower", cursive;
@@ -315,29 +311,9 @@ td {
   border-image: url(../multimedia/hojasverdes.jpg) 25 round;
 }
 
-/* -------------------------------------- */
-/* Estilos para la seccion Psicoterapias Integradoras */
-#psicoterapias {
-  margin: 1% auto;
-  width: 100%;
-  height: 100%;
-}
-
-#psicoterapias p {
-  font-style: italic;
-  font-size: 1.1rem;
-  font-family: "Indie Flower", cursive;
-  text-align: center;
-  margin: 0;
-  padding: 1%;
-  background-image: repeating-linear-gradient(to right, rgba(189, 168, 101, 0.247), #b9821b);
-  border: 1.3rem solid;
-  border-image: url(../multimedia/hojasverdes.jpg) 25 round;
-}
-
 /* ----------------------------------------------------- */
 /* Seccion de contacto */
-#formularioContacto {
+.main__formulario {
   margin: 1% auto;
   width: 30%;
   display: flex;
@@ -346,24 +322,20 @@ td {
   justify-content: center;
   font-size: 1.5rem;
 }
-
-#formularioContacto label {
+.main__formulario .main__formulario__label {
   margin: 1% 0%;
 }
-
-#areaDeTexto {
+.main__formulario #areaDeTexto {
   display: flex;
   flex-direction: column;
 }
-
-#areaBotonesForm {
+.main__formulario .main__formulario__contenedor {
   display: flex;
   flex-direction: row;
   width: 100%;
   height: 120%;
 }
-
-.botonesForm {
+.main__formulario .main__formulario__contenedor .main__formulario__contenedor__botones {
   width: 50%;
 }
 

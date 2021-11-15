@@ -16,25 +16,25 @@
 </head>
 <body>
     <!-- HEADER -->
-    <header>
-        <h1>Psicoterin</h1>
-        <img src="../multimedia/ARBONDALA.png" alt="Logo" >
-        <nav id="barraNavegacion">
-            <ul id="listaNavegacion" >
-                <li><a href="../index.html">Indice, </a></li>
-                <li><a href="sobreNosotras.html">Sobre Nosotras, </a></li>
-                <li><a href="medicinaIntegral.html">Medicina Integral, </a></li>
-                <li><a href="psicoterapias.html">Psicoterapias Integradoras, </a></li>
-                <li><a href="talleres.html">Talleres</a></li>
+    <header class ="header">
+        <h1 class ="header__h1">Psicoterin</h1>
+        <img class ="header__img" src="../multimedia/ARBONDALA.png" alt="Logo" >
+        <!-- BARRA DE NAVEGACION -->
+        <nav class ="header__barraNavegacion">
+            <ul class ="header__barraNavegacion__listaNavegacion">
+                <li><a href="../index.html">Indice </a></li>
+                <li><a href="../html/sobreNosotras.html">Sobre Nosotras </a></li>
+                <li><a href="../html/medicinaIntegral.html">Medicina Integral </a></li>
+                <li><a href="../html/psicoterapias.html">Psicoterapias Integradoras </a></li>
+                <li><a href="../html/talleres.html">Talleres</a></li>
             </ul>
         </nav>
     </header>
     <!-- MAIN -->
-    <main>
-        <!-- MAIN TITULO -->
-        <h2>Medicina Integral</h2>
+    <main class="main">
+        <h2 class="main__h2">Medicina Integral</h2>
         <!-- SEGUNDO CONTENEDOR -->
-        <div class = "segundoContenedor">
+        <section class = "main__index1">
             <!-- Carousel -->
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
@@ -62,54 +62,55 @@
                     <span class="visually-hidden">Siguiente</span>
                 </button>
             </div>
-            <p>La Medicina Integrativa es una combinación de tratamientos de la medicina convencional y de las medicinas complementaria y alternativa. La enfermedad en sí deja de ser el punto central y la atencion se enfoca en el individuo en su totalidad: cuerpo  mente, espíritu y sociedad. Surge desde la necesidad de humanización del encuentro con el paciente</p>
-        </div>
-        
-        <!-- TERCER CONTENEDOR -->
-        <div id="medicinaIntegral">
-            <p>
-            Considerando que las enfermedades físicas afectan la salud emocional y mental de las personas, así como las complicaciones psicológicas pueden hacer que el cuerpo se enferme, la medicina integrativa promueve el bienestar y la calidad de vida por medio del equilibrio de los diferentes aspectos que afectan al individuo.
-            Esta medicina se basa en 4 puntos fundamentales: 
-                -MEDICINA CONVENCIONAL
-                -MEDICINA COMPLEMENTARIA
-                -RELACION MEDICO PACIENTE 
-                -PARTICIPACION ACTIVA DEL PACIENTE
-            
-            Eso significa que, al contrario de tratar específicamente la enfermedad, la práctica integrativa se enfoca en el paciente en su totalidad, identificando diversos factores, entre ellos fisiológicos, psicológicos, nutricionales y hasta sociales, que puedan ser mejorados para garantizar una salud plena. 
-            Muchas veces,  las enfermedades surgen como consecuencia de los hábitos alimenticios desequilibrados o rutina compuestas por comportamientos inadecuados, que de una forma u otra terminan debilitando el sistema inmunológico. Y aunque esa idea ya sea difundida dentro de la medicina tradicional, la práctica integrativa o integral tiene el propósito de hacer que los tratamientos sean todavía más efectivos con una colaboración entre paciente, médicos, terapeuta y profesionales de la salud en general. 
-            Con esto, la persona tratada comienza a percibir que su función va más allá de tomar medicamentos y hacerse exámenes, y se ve como el principal agente de cambio para su salud, beneficiándose a él mismo y también a los profesionales que lo acompañan. Además, el acompañamiento integrado desenfoca la enfermedad y sitúa al paciente como protagonista del tratamiento
-            . Siempre que los métodos alternativos estén alineados con el estilo de vida del paciente, estos serán capaces de proporcionar tranquilidad, alegría y esperanza, potenciando los resultados del tratamiento convencional y aumentando las posibilidades de recuperación.
-            Nuestro abordaje será  desde nuestra  formación   en  la medicina convencional , integrandola con la medicina ayurvedica, bases bioenergéticas y tratamientos florales  
+            <audio class = "main__index1__audio" src="../multimedia/tranqui.mp3" preload="auto" controls autoplay></audio>
+            <p class="main__index1__p">La Medicina Integrativa es una combinación de tratamientos de la medicina convencional y de las medicinas complementaria y alternativa. La enfermedad en sí deja de ser el punto central y la atencion se enfoca en el individuo en su totalidad: cuerpo  mente, espíritu y sociedad. Surge desde la necesidad de humanización del encuentro con el paciente</p>
+        </section>
+        <!-- Seccion de main corto -->
+        <section class="main_corto">
+            <p class="main_corto__p">
+                Considerando que las enfermedades físicas afectan la salud emocional y mental de las personas, así como las complicaciones psicológicas pueden hacer que el cuerpo se enferme, la medicina integrativa promueve el bienestar y la calidad de vida por medio del equilibrio de los diferentes aspectos que afectan al individuo.
+                Esta medicina se basa en 4 puntos fundamentales: 
+                    -MEDICINA CONVENCIONAL
+                    -MEDICINA COMPLEMENTARIA
+                    -RELACION MEDICO PACIENTE 
+                    -PARTICIPACION ACTIVA DEL PACIENTE
+                
+                Eso significa que, al contrario de tratar específicamente la enfermedad, la práctica integrativa se enfoca en el paciente en su totalidad, identificando diversos factores, entre ellos fisiológicos, psicológicos, nutricionales y hasta sociales, que puedan ser mejorados para garantizar una salud plena. 
+                Muchas veces,  las enfermedades surgen como consecuencia de los hábitos alimenticios desequilibrados o rutina compuestas por comportamientos inadecuados, que de una forma u otra terminan debilitando el sistema inmunológico. Y aunque esa idea ya sea difundida dentro de la medicina tradicional, la práctica integrativa o integral tiene el propósito de hacer que los tratamientos sean todavía más efectivos con una colaboración entre paciente, médicos, terapeuta y profesionales de la salud en general. 
+                Con esto, la persona tratada comienza a percibir que su función va más allá de tomar medicamentos y hacerse exámenes, y se ve como el principal agente de cambio para su salud, beneficiándose a él mismo y también a los profesionales que lo acompañan. Además, el acompañamiento integrado desenfoca la enfermedad y sitúa al paciente como protagonista del tratamiento
+                . Siempre que los métodos alternativos estén alineados con el estilo de vida del paciente, estos serán capaces de proporcionar tranquilidad, alegría y esperanza, potenciando los resultados del tratamiento convencional y aumentando las posibilidades de recuperación.
+                Nuestro abordaje será  desde nuestra  formación   en  la medicina convencional , integrandola con la medicina ayurvedica, bases bioenergéticas y tratamientos florales  
             </p>
-        </div>
-        
-    </main>
+        </section>
+
+    </main>    
     <!-- FOOTER -->
-    <footer class ="estiloFooter">
-        <div class = "presentacionFooter">
-            <div>
-                <img src="../multimedia/susi.jpg" alt="">
-                <h5>Susana Hebe Vallejos</h5>
+    <footer class ="footer">
+        <div class = "footer__presentacion">
+            <div class = "footer__presentacion__contenedor">
+                <img class ="footer__presentacion__contenedor__img" src="../multimedia/susi.jpg" alt="">
+                <h5 class= "footer__presentacion__contenedor__titulo">Susana Hebe Vallejos</h5>
             </div>
-            <div>
-                <img src="../multimedia/cris.jpg" alt="">
-                <h5>Maria Cristina Jorrat</h5>
+            <div class="footer__presentacion__contenedor">
+                <img class= "footer__presentacion__contenedor__img" src="../multimedia/cris.jpg" alt="">
+                <h5 class="footer__presentacion__contenedor__titulo">Maria Cristina Jorrat</h5>
             </div>
         </div>
-        <div class = "ubicacionesFooter">
+        <div class = "footer__ubicaciones">
             <sub>Conoce Nuestras Ubicaciones</sub>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13029.383592428007!2d-59.14447728424563!3d-35.272525333115446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bda7eda23a8e83%3A0xe38b03e48e589265!2sLaguna%20de%20Lobos%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1627319279830!5m2!1ses!2sar"  loading="lazy">
             </iframe>
         </div>
-        <div class= "contactoFooter">
-            <a id="linkContacto" href="../html/contacto.html">Contacto</a>
-            <div class = "redesFooter">
-            <a href=https://www.whatsapp.com/?lang=es "><i class="fab fa-whatsapp"></i></a>
-            <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
-            <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+        <div class= "footer__contacto">
+            <a class="footer__contacto__linkContacto" href="../html/contacto.html">Contacto</a>
+            <div class = "footer__contacto__redes">
+                <a href="https://www.whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+            </div>
         </div>
-    </footer>  
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>

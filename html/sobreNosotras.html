@@ -17,25 +17,25 @@
 </head>
 <body>
     <!-- HEADER -->
-    <header>
-        <h1>Psicoterin</h1>
-        <img src="../multimedia/ARBONDALA.png" alt="Logo" >
-        <nav id="barraNavegacion">
-            <ul id="listaNavegacion" >
-                <li><a href="../index.html">Indice, </a></li>
-                <li><a href="sobreNosotras.html">Sobre Nosotras, </a></li>
-                <li><a href="medicinaIntegral.html">Medicina Integral, </a></li>
-                <li><a href="psicoterapias.html">Psicoterapias Integradoras, </a></li>
-                <li><a href="talleres.html">Talleres</a></li>
+    <header class ="header">
+        <h1 class ="header__h1">Psicoterin</h1>
+        <img class ="header__img" src="../multimedia/ARBONDALA.png" alt="Logo" >
+        <!-- BARRA DE NAVEGACION -->
+        <nav class ="header__barraNavegacion">
+            <ul class ="header__barraNavegacion__listaNavegacion">
+                <li><a href="../index.html">Indice </a></li>
+                <li><a href="../html/sobreNosotras.html">Sobre Nosotras </a></li>
+                <li><a href="../html/medicinaIntegral.html">Medicina Integral </a></li>
+                <li><a href="../html/psicoterapias.html">Psicoterapias Integradoras </a></li>
+                <li><a href="../html/talleres.html">Talleres</a></li>
             </ul>
         </nav>
     </header>
     <!-- MAIN -->
-    <main>
-        <!-- TITULO MAIN -->
-        <h2>Sobre Nosotras</h2>
-        <!-- SEGUNDO CONTENEDOR -->
-        <div class = "segundoContenedor">
+    <main class="main">
+        <h2 class= "main__h2">Sobre Nosotras</h2>
+        <!-- SEGUND -->
+        <section class = "main__index1">
             <!-- Carousel -->
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
@@ -63,48 +63,50 @@
                     <span class="visually-hidden">Siguiente</span>
                 </button>
             </div>
-            <p>Nos une la necesidad de compartir  nuestra experiencia   conocimientos  no solo aprendidos , sino también vivenciados. Sentimos con sorpresa y maravilladas que el conocimiento del ser humano , nunca es suficiente para alcanzar una mirada desde  la integración , bio-  psico-  socio- espiritual porque  siempre es posible descubrir  cada vez mas potenciales</p>
-        </div>
+            <audio class = "main__index1__audio" src="../multimedia/tranqui.mp3" preload="auto" controls autoplay></audio>
+            <p class="main__index1__p">Nos une la necesidad de compartir  nuestra experiencia   conocimientos  no solo aprendidos , sino también vivenciados. Sentimos con sorpresa y maravilladas que el conocimiento del ser humano , nunca es suficiente para alcanzar una mirada desde  la integración , bio-  psico-  socio- espiritual porque  siempre es posible descubrir  cada vez mas potenciales</p>
+        </section>
         <!-- SECCION ESPECIFICA SOBRE NOSOTRAS -->
-        <section id= "sobreNos">
-            <div class ="sobreNos_presentacion">
-                <img src="../multimedia/susi.jpg" alt="">
-                <h3>Susana Hebe Vallejos</h3>
-                <p>Inicie mi formación como medica , pensando que ello  me daría un conocimiento amplio del ser humano, sin embargo luego de alcanzar el titulo comprendí que ser medica  no era suficiente para mi objetivo , realice entonces la especialidad de psiquiatría de adultos y luego psiquiatra  y psicoterapeuta infanto juvenil.,abarcando simultáneamente el estudio de la farmacología con un master en  neuro inmuno psicofarmacologia en  la Fundación Barcelo .  Asistí a grupos de estudio de formación  psicoanalítica, algunos seminarios de terapia sistémica, , como ello no cubría totalmente mis expectativas ,según mi entender …realice seminarios  en el centro transpersonal de Bs. As. , estudie en la AMA  el posgrado de Salud y Espiritualidad. Me forme como facilitadora en memoria celular, terapia de  Flores Americanas  y realice  seminarios de formación en medicinas complementarias desde la visión integral de la Sintergetica, transite un año por la escuela de bioenergética, y me fui orientando  a la búsqueda de algo cada vez mas integrador estudié en  la escuela gestáltica de buenos aires y actualmente luego de este recorrido me encuentro volviendo a las raíces de la medicina integrando conocimientos de  la medicina Ayurvedica 
+        <section class= "main__sobreNos">
+            <div class= "main__sobreNos__presentacion">
+                <img class= "main__sobreNos__presentacion__img" src="../multimedia/susi.jpg" alt="">
+                <h3 class= "main__sobreNos__presentacion__titulo">Susana Hebe Vallejos</h3>
+                <p class= "main__sobreNos__presentacion__texto">Inicie mi formación como medica , pensando que ello  me daría un conocimiento amplio del ser humano, sin embargo luego de alcanzar el titulo comprendí que ser medica  no era suficiente para mi objetivo , realice entonces la especialidad de psiquiatría de adultos y luego psiquiatra  y psicoterapeuta infanto juvenil.,abarcando simultáneamente el estudio de la farmacología con un master en  neuro inmuno psicofarmacologia en  la Fundación Barcelo .  Asistí a grupos de estudio de formación  psicoanalítica, algunos seminarios de terapia sistémica, , como ello no cubría totalmente mis expectativas ,según mi entender …realice seminarios  en el centro transpersonal de Bs. As. , estudie en la AMA  el posgrado de Salud y Espiritualidad. Me forme como facilitadora en memoria celular, terapia de  Flores Americanas  y realice  seminarios de formación en medicinas complementarias desde la visión integral de la Sintergetica, transite un año por la escuela de bioenergética, y me fui orientando  a la búsqueda de algo cada vez mas integrador estudié en  la escuela gestáltica de buenos aires y actualmente luego de este recorrido me encuentro volviendo a las raíces de la medicina integrando conocimientos de  la medicina Ayurvedica 
                 Actualmente me dedico a la atención hospitalaria, como jefa de sección ,y en consultorio privado en abordajes individuales y grupales . Doy cursos a residentes en salud mental y en la carrera de especialista de la uba</p>
             </div>
-            <div class ="sobreNos_presentacion">
-                <img src="../multimedia/cris.jpg" alt="">
-                <h3>Maria Cristina Jorrat</h3>
-                <p>Elegí la medicina como una manera de comprender al ser humano, orientada a esto me dirigí hacia la psiquiatría de adultos y luego infanto juvenil .Encontrándome en un  medio  tradicionalmente psiquiátrico, busque en grupos psicoanalíticos, una lectura mas psicodinamica de los procesos  traumáticos. Mi experiencia en el trabajo en Hospital de clínicas  José de San Martin en sala  de pediatría junto a los payamedicos  me llevo a sumarle a mi formación dinámica aspectos mas humanísticos , acompañando el dolor de  niños , padres y  profesionales.  Considerando que la formación profesional me interese en temas como duelo, psicoanálisis de niños con Alba Flesler ,  en la escuela freudiana, me introduje luego en el curso de facilitadora de memoria celular  y  en el posgrado de espiritualidad  y salud mental . 
+            <div class= "main__sobreNos__presentacion">
+                <img class= "main__sobreNos__presentacion__img"  src="../multimedia/cris.jpg" alt="">
+                <h3 class= "main__sobreNos__presentacion__titulo">Maria Cristina Jorrat</h3>
+                <p class= "main__sobreNos__presentacion__texto">Elegí la medicina como una manera de comprender al ser humano, orientada a esto me dirigí hacia la psiquiatría de adultos y luego infanto juvenil .Encontrándome en un  medio  tradicionalmente psiquiátrico, busque en grupos psicoanalíticos, una lectura mas psicodinamica de los procesos  traumáticos. Mi experiencia en el trabajo en Hospital de clínicas  José de San Martin en sala  de pediatría junto a los payamedicos  me llevo a sumarle a mi formación dinámica aspectos mas humanísticos , acompañando el dolor de  niños , padres y  profesionales.  Considerando que la formación profesional me interese en temas como duelo, psicoanálisis de niños con Alba Flesler ,  en la escuela freudiana, me introduje luego en el curso de facilitadora de memoria celular  y  en el posgrado de espiritualidad  y salud mental . 
                     En la actualidad soy jefa de sección de un servicio hospitalario que se dedica a la asistencia de  pacientes agudos, dando clases  para cursos de posgrado de la UBA,  supervisión de concurrentes y residentes y terapeuta individual y grupal</p>
             </div>
         </section>
     </main>
     <!-- FOOTER -->
-    <footer class ="estiloFooter">
-        <div class = "presentacionFooter">
-            <div>
-                <img src="../multimedia/susi.jpg" alt="">
-                <h5>Susana Hebe Vallejos</h5>
+    <footer class ="footer">
+        <div class = "footer__presentacion">
+            <div class = "footer__presentacion__contenedor">
+                <img class ="footer__presentacion__contenedor__img" src="../multimedia/susi.jpg" alt="">
+                <h5 class= "footer__presentacion__contenedor__titulo">Susana Hebe Vallejos</h5>
             </div>
-            <div>
-                <img src="../multimedia/cris.jpg" alt="">
-                <h5>Maria Cristina Jorrat</h5>
+            <div class="footer__presentacion__contenedor">
+                <img class= "footer__presentacion__contenedor__img" src="../multimedia/cris.jpg" alt="">
+                <h5 class="footer__presentacion__contenedor__titulo">Maria Cristina Jorrat</h5>
             </div>
         </div>
-        <div class = "ubicacionesFooter">
+        <div class = "footer__ubicaciones">
             <sub>Conoce Nuestras Ubicaciones</sub>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13029.383592428007!2d-59.14447728424563!3d-35.272525333115446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bda7eda23a8e83%3A0xe38b03e48e589265!2sLaguna%20de%20Lobos%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1627319279830!5m2!1ses!2sar"  loading="lazy">
             </iframe>
         </div>
-        <div class= "contactoFooter">
-            <a id="linkContacto" href="../html/contacto.html">Contacto</a>
-            <div class = "redesFooter">
-            <a href=https://www.whatsapp.com/?lang=es "><i class="fab fa-whatsapp"></i></a>
-            <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
-            <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+        <div class= "footer__contacto">
+            <a class="footer__contacto__linkContacto" href="../html/contacto.html">Contacto</a>
+            <div class = "footer__contacto__redes">
+                <a href="https://www.whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+            </div>
         </div>
     </footer>    
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
