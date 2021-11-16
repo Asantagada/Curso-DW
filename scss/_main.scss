@@ -1,0 +1,93 @@
+@import "variables";
+
+/* MAIN  */
+.main{
+    padding: 1% 0.3%;
+    margin-top: 2%;
+    animation: fadeInUp;
+    animation-duration: 1s;
+    .main__h2{
+        text-align: center;
+        font-family: 'Dancing Script', cursive;
+        font-size: 3rem;
+        text-shadow: -0.2rem -0.1px rgba(0, 0, 0, 0.336) ;
+    }
+}
+/* SECCION 1 DEL MAIN */
+.main__index1{
+    width: 100%;
+    padding-bottom: 1%;
+    display: grid;
+    grid-template-areas: "imagen audio" "imagen texto" "imagen texto";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 2fr 2fr;
+    align-items: center;
+    justify-content: center;
+    .slide{
+        grid-area: imagen;
+        width:100%;
+        height:100%;
+        padding: 0 2%;
+        .carousel-inner{
+            width: 100%;
+            height: 100%;
+            .carousel-item img{
+                height: 30rem;
+                border-radius: 50%;
+            }
+        }
+    }
+    .main__index1__audio{
+        grid-area: audio;
+    }
+    .main__index1__p{
+        grid-area: texto;
+        font-family: 'Dancing Script', cursive;
+        font-size: 1.7rem;
+        padding:2%;
+        font-weight: 700;
+    }
+}
+/* -------------------------------------- */
+/* Seccion 2 del index */
+.main__index2 {
+    margin-top: 3%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    justify-content: space-between;
+    background-image:$degradeMarron;
+    border: 1.3rem solid;
+    border-image: $imagenHojas 20 round;
+    font-size: 1.2rem;
+    justify-self: auto;
+    .main__index2__contenedores {
+        padding: 1.5%;
+        .main__index2__contenedores__titulo{
+            font-size: 3rem;
+            text-align: center;
+            font-family: 'Dancing Script', cursive;
+        }
+        .main__index2__contenedores__texto{
+            font-style: italic;
+        }
+    }
+}
+/* ------------------------------------------------- */
+/* Estilos de la seccion con el main corto */
+.main__corto{
+    margin: 1% auto;
+    width: 100%;
+    height: 100%;
+    .main__corto__p{
+        font-style: italic;
+        font-size: 1.1rem;
+        font-family: 'Indie Flower', cursive;
+        text-align: center;
+        margin: 0;
+        padding: 1%;
+        background-image: $degradeMarron;
+        border: 2rem solid;
+        border-image: $imagenHojas 25 round;
+    }
+}

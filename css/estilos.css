@@ -1,188 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  background-image: repeating-linear-gradient(250deg, white, #e06be0);
-}
-
-.header {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 3fr 2fr;
-  grid-template-rows: 2fr 2fr 1fr;
-  grid-template-areas: "logo title title" "logo title title" "logo nav nav";
-}
-.header .header__h1 {
-  grid-area: title;
-  width: 100%;
-  text-align: center;
-  font-size: 7rem;
-  font-family: "Dancing Script", cursive;
-  letter-spacing: 0.5vw;
-  background-image: url(../multimedia/hojasverdes.jpg);
-  background-position: center;
-  margin: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  animation: flash;
-  animation-duration: 3s;
-  color: white;
-  text-shadow: 0.3rem 0.3rem black;
-}
-.header .header__img {
-  grid-area: logo;
-  width: 100%;
-  height: 100%;
-}
-.header .header__barraNavegacion {
-  grid-area: nav;
-  width: 100%;
-  height: 100%;
-}
-.header .header__barraNavegacion .header__barraNavegacion__listaNavegacion {
-  width: auto;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  background-image: repeating-linear-gradient(to right, rgba(189, 168, 101, 0.247), #b9821b);
-  list-style: none;
-  margin: 0;
-}
-.header .header__barraNavegacion .header__barraNavegacion__listaNavegacion li a {
-  width: 100%;
-  height: 100%;
-  font-style: italic;
-  text-align: center;
-  font-size: 1.5rem;
-  color: black;
-  transition: font-size 1.5s;
-  font-weight: 400;
-}
-.header .header__barraNavegacion .header__barraNavegacion__listaNavegacion li a:hover {
-  font-size: 1.8rem;
-}
-
-/* ------------------------------------------------------- */
-/* MAIN  */
-.main {
-  padding: 1% 0.3%;
-  margin-top: 2%;
-  animation: fadeInUp;
-  animation-duration: 1s;
-}
-.main .main__h2 {
-  text-align: center;
-  font-family: "Dancing Script", cursive;
-  font-size: 3rem;
-  text-shadow: -0.2rem -0.1px rgba(0, 0, 0, 0.336);
-}
-
-/* ---------------------------------------------- */
-/* SECCION 1 DEL MAIN */
-.main__index1 {
-  width: 100%;
-  padding-bottom: 1%;
-  display: grid;
-  grid-template-areas: "imagen audio" "imagen texto" "imagen texto";
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 1fr 2fr 2fr;
-  align-items: center;
-  justify-content: center;
-}
-.main__index1 .slide {
-  grid-area: imagen;
-  width: 100%;
-  height: 100%;
-  padding: 0 2%;
-}
-.main__index1 .slide .carousel-inner {
-  width: 100%;
-  height: 100%;
-}
-.main__index1 .slide .carousel-inner .carousel-item img {
-  height: 30rem;
-  border-radius: 50%;
-}
-.main__index1 .main__index1__audio {
-  grid-area: audio;
-}
-.main__index1 .main__index1__p {
-  grid-area: texto;
-  font-family: "Dancing Script", cursive;
-  font-size: 1.7rem;
-  padding: 2%;
-  font-weight: 700;
-}
-
-/* -------------------------------------- */
-/* Seccion 2 del index */
-.main__index2 {
-  margin-top: 3%;
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 50% 50%;
-  justify-content: space-between;
-  background-image: repeating-linear-gradient(to right, rgba(189, 168, 101, 0.247), #b9821b);
-  border: 1.3rem solid;
-  border-image: url(../multimedia/hojasverdes.jpg) 20 round;
-  font-size: 1.2rem;
-  justify-self: auto;
-}
-.main__index2 .main__index2__contenedores {
-  padding: 1.5%;
-}
-.main__index2 .main__index2__contenedores .main__index2__contenedores__titulo {
-  font-size: 3rem;
-  text-align: center;
-  font-family: "Dancing Script", cursive;
-}
-.main__index2 .main__index2__contenedores .main__index2__contenedores__texto {
-  font-style: italic;
-}
-
-/* ------------------------------------------------- */
-/* TABLAS */
-.tabla {
-  background-color: rgba(233, 121, 17, 0.726);
-  border-style: dotted;
-  border-color: #2bcc2b;
-}
-.tabla li {
-  list-style: none;
-}
-
-th {
-  border-style: none;
-  border-color: black;
-  font-style: italic;
-  font-size: auto;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-}
-
-td {
-  border-style: none;
-  border-color: black;
-}
-
-.tablasContenido {
-  font-family: "Times New Roman", Times, serif;
-  text-align: center;
-  font-weight: bold;
-  font-size: medium;
-  padding: 1rem;
-  border: 1rem solid transparent;
-  border-image: url(../multimedia/hojasverdes.jpg) 15 round;
-  background-color: #b9821b;
-  overflow: auto;
-  width: 25%;
-}
-
-/* ---------------------------------- */
 /* FOOTER */
 .footer {
   width: 100%;
@@ -193,7 +8,7 @@ td {
   margin-bottom: 0;
   margin-top: 5%;
   border-top: 1.3rem solid;
-  border-image: url(../multimedia/hojasverdes.jpg) 25 round;
+  border-image: url(/multimedia/hojasverdes.jpg) 25 round;
 }
 .footer .footer__presentacion {
   width: 100%;
@@ -258,7 +73,233 @@ td {
   color: red;
 }
 
-/* ------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: repeating-linear-gradient(250deg, white, #e06be0);
+}
+
+/* ---------------------------------------------- */
+/* TABLAS */
+.tabla {
+  background-color: rgba(233, 121, 17, 0.726);
+  border-style: dotted;
+  border-color: #2bcc2b;
+}
+.tabla li {
+  list-style: none;
+}
+
+th {
+  border-style: none;
+  border-color: black;
+  font-style: italic;
+  font-size: auto;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+td {
+  border-style: none;
+  border-color: black;
+}
+
+.tablasContenido {
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  font-weight: bold;
+  font-size: medium;
+  padding: 1rem;
+  border: 1rem solid transparent;
+  border-image: url(../multimedia/hojasverdes.jpg) 15 round;
+  background-color: #b9821b;
+  overflow: auto;
+  width: 25%;
+}
+
+/* ----------------------------------------------------- */
+.header {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 3fr 2fr;
+  grid-template-rows: 2fr 2fr 1fr;
+  grid-template-areas: "logo title title" "logo title title" "logo nav nav";
+}
+.header .header__h1 {
+  grid-area: title;
+  width: 100%;
+  text-align: center;
+  font-size: 7rem;
+  font-family: "Dancing Script", cursive;
+  letter-spacing: 0.5vw;
+  background-image: url(/multimedia/hojasverdes.jpg);
+  background-position: center;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: flash;
+  animation-duration: 3s;
+  color: white;
+  text-shadow: 0.3rem 0.3rem black;
+}
+.header .header__img {
+  grid-area: logo;
+  width: 100%;
+  height: 100%;
+}
+.header .header__barraNavegacion {
+  grid-area: nav;
+  width: 100%;
+  height: 100%;
+}
+.header .header__barraNavegacion .header__barraNavegacion__listaNavegacion {
+  width: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-image: repeating-linear-gradient(to right, rgba(189, 168, 101, 0.247), #b9821b);
+  list-style: none;
+  margin: 0;
+}
+.header .header__barraNavegacion .header__barraNavegacion__listaNavegacion li a {
+  width: 100%;
+  height: 100%;
+  font-style: italic;
+  text-align: center;
+  font-size: 1.5rem;
+  color: black;
+  transition: font-size 1.5s;
+  font-weight: 400;
+}
+.header .header__barraNavegacion .header__barraNavegacion__listaNavegacion li a:hover {
+  font-size: 1.8rem;
+}
+
+/* MAIN  */
+.main {
+  padding: 1% 0.3%;
+  margin-top: 2%;
+  animation: fadeInUp;
+  animation-duration: 1s;
+}
+.main .main__h2 {
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+  font-size: 3rem;
+  text-shadow: -0.2rem -0.1px rgba(0, 0, 0, 0.336);
+}
+
+/* SECCION 1 DEL MAIN */
+.main__index1 {
+  width: 100%;
+  padding-bottom: 1%;
+  display: grid;
+  grid-template-areas: "imagen audio" "imagen texto" "imagen texto";
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr 2fr 2fr;
+  align-items: center;
+  justify-content: center;
+}
+.main__index1 .slide {
+  grid-area: imagen;
+  width: 100%;
+  height: 100%;
+  padding: 0 2%;
+}
+.main__index1 .slide .carousel-inner {
+  width: 100%;
+  height: 100%;
+}
+.main__index1 .slide .carousel-inner .carousel-item img {
+  height: 30rem;
+  border-radius: 50%;
+}
+.main__index1 .main__index1__audio {
+  grid-area: audio;
+}
+.main__index1 .main__index1__p {
+  grid-area: texto;
+  font-family: "Dancing Script", cursive;
+  font-size: 1.7rem;
+  padding: 2%;
+  font-weight: 700;
+}
+
+/* -------------------------------------- */
+/* Seccion 2 del index */
+.main__index2 {
+  margin-top: 3%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  justify-content: space-between;
+  background-image: repeating-linear-gradient(to right, rgba(189, 168, 101, 0.247), #b9821b);
+  border: 1.3rem solid;
+  border-image: url(/multimedia/hojasverdes.jpg) 20 round;
+  font-size: 1.2rem;
+  justify-self: auto;
+}
+.main__index2 .main__index2__contenedores {
+  padding: 1.5%;
+}
+.main__index2 .main__index2__contenedores .main__index2__contenedores__titulo {
+  font-size: 3rem;
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+}
+.main__index2 .main__index2__contenedores .main__index2__contenedores__texto {
+  font-style: italic;
+}
+
+/* ------------------------------------------------- */
+/* Estilos de la seccion con el main corto */
+.main__corto {
+  margin: 1% auto;
+  width: 100%;
+  height: 100%;
+}
+.main__corto .main__corto__p {
+  font-style: italic;
+  font-size: 1.1rem;
+  font-family: "Indie Flower", cursive;
+  text-align: center;
+  margin: 0;
+  padding: 1%;
+  background-image: repeating-linear-gradient(to right, rgba(189, 168, 101, 0.247), #b9821b);
+  border: 2rem solid;
+  border-image: url(/multimedia/hojasverdes.jpg) 25 round;
+}
+
+/* Mobile First */
+@media only screen and (max-width: 768px) {
+  #index2 {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 25% 25% 25% 25%;
+    justify-content: space-evenly;
+    background-image: repeating-linear-gradient(to right, rgba(189, 168, 101, 0.247), #b9821b);
+    border: 1rem solid;
+    border-image: url(../multimedia/hojasverdes.jpg) 20 round;
+    font-size: 1rem;
+    justify-self: auto;
+  }
+
+  #index2 h2 {
+    font-size: 2rem;
+    text-align: center;
+    font-family: "Dancing Script", cursive;
+    padding: 1%;
+  }
+
+  #index2 p {
+    font-style: italic;
+  }
+}
 /* Estilos de la seccion Sobre Nosotras */
 .main__sobreNos__presentacion {
   display: grid;
@@ -292,26 +333,6 @@ td {
   font-family: "Indie Flower", cursive;
 }
 
-/* ------------------------------ */
-/* Estilos de la seccion con el main corto */
-.main__corto {
-  margin: 1% auto;
-  width: 100%;
-  height: 100%;
-}
-.main__corto .main__corto__p {
-  font-style: italic;
-  font-size: 1.1rem;
-  font-family: "Indie Flower", cursive;
-  text-align: center;
-  margin: 0;
-  padding: 1%;
-  background-image: repeating-linear-gradient(to right, rgba(189, 168, 101, 0.247), #b9821b);
-  border: 2rem solid;
-  border-image: url(../multimedia/hojasverdes.jpg) 25 round;
-}
-
-/* ----------------------------------------------------- */
 /* Seccion de contacto */
 .main__formulario {
   margin: 1% auto;
@@ -337,33 +358,6 @@ td {
 }
 .main__formulario .main__formulario__contenedor .main__formulario__contenedor__botones {
   width: 50%;
-}
-
-/* --------------------------------- */
-/* Mobile First */
-@media only screen and (max-width: 768px) {
-  #index2 {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 25% 25% 25% 25%;
-    justify-content: space-evenly;
-    background-image: repeating-linear-gradient(to right, rgba(189, 168, 101, 0.247), #b9821b);
-    border: 1rem solid;
-    border-image: url(../multimedia/hojasverdes.jpg) 20 round;
-    font-size: 1rem;
-    justify-self: auto;
-  }
-
-  #index2 h2 {
-    font-size: 2rem;
-    text-align: center;
-    font-family: "Dancing Script", cursive;
-    padding: 1%;
-  }
-
-  #index2 p {
-    font-style: italic;
-  }
 }
 
 /*# sourceMappingURL=estilos.css.map */

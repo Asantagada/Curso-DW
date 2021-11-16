@@ -1,0 +1,25 @@
+@import "variables";
+
+/* Mobile First */
+@media only screen and (max-width:768px){
+    #index2{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 25% 25% 25% 25%;
+        justify-content: space-evenly;
+        background-image: repeating-linear-gradient(to right, rgba(189, 168, 101, 0.247), #b9821b);
+        border: 1rem solid;
+        border-image: url(../multimedia/hojasverdes.jpg) 20 round;
+        font-size: 1rem;
+        justify-self: auto;
+    }
+    #index2 h2 {
+        font-size: 2rem;
+        text-align: center;
+        font-family: 'Dancing Script', cursive;
+        padding: 1%
+    }
+    #index2 p{
+        font-style: italic;
+    }
+}
