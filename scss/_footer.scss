@@ -3,51 +3,29 @@
 /* FOOTER */
 .footer{
     width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     bottom: 0;
     padding-bottom: 0;
     margin-bottom: 0;
     margin-top: 5%;
-    border-top: 1.3rem solid;
-    border-image: $imagenHojas 25 round; 
-    .footer__presentacion{
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        .footer__presentacion__contenedor{
-            display:flex;
-            flex-direction: column;
-            width: 50%;
-            justify-content: end;
-            align-items: center;
-        }
-        .footer__presentacion__contenedor__img{
-            width:8.3rem;
-            height: 8.3rem;
-            height: 80%;
-            border-radius: 50%;
-        }
-        .footer__presentacion__contenedor__titulo{
-            font-size: 1rem;
-        }
-    }
-    .footer__ubicaciones{
-        width: 100% ;
-        display: grid;
-        grid-template-columns: 1;
-        grid-template-rows: 1fr 4fr;
-        justify-content: center;
-        align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-image: repeating-linear-gradient(to bottom, #e06be0 ,rgba(255, 255, 255, 0)) ;
+    .footer_logo{
+        width: 15%;
+        border-radius: 50%;
     }
     .footer__contacto{
-        width: 100%;
+        width: 30%;
         text-align: center;
         .footer__contacto__linkContacto {
             width: 25%;
             height: 40%;
             text-align: center;
             font-size: 3rem;
+            color: white;
+            font-weight: 500;
+            text-shadow: 0.2rem 0.2rem black;
         }
         .footer__contacto__redes{
             width:100%;
@@ -59,9 +37,10 @@
             justify-content: space-between;
             font-size: 4rem;
             font-weight: 700;
+            text-shadow: 0.1rem 0.1rem white;
             @each $name, $value in $Redes{
                 .fa-#{$name}{
-                    color:$value
+                    color:$value;
                 }
             }
         }

@@ -3,19 +3,13 @@
 // /* Header */
 .header {
     width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 3fr 2fr;
-    grid-template-rows: 2fr 2fr 1fr;
-    grid-template-areas: "logo title title" "logo title title" "logo nav nav";
     .header__h1 {
-        grid-area: title;
         width: 100%;
         text-align: center;
         font-size: 7rem; 
         font-family: 'Dancing Script', cursive;
         letter-spacing: 0.5vw;
-        background-image: $imagenHojas;
-        background-position: center;
+        background-image: url(/multimedia/hojasverdes.jpg);
         margin: 0;
         display: flex;
         align-items: center;
@@ -25,25 +19,19 @@
         color: white;
         text-shadow: 0.3rem 0.3rem black;
     }
-    .header__img {
-        grid-area: logo;
-        width: 100%;
-        height: 100%;
-    }
     .header__barraNavegacion{
-        grid-area: nav;
         width: 100%;
         height: 100%;
         .header__barraNavegacion__listaNavegacion{
             width: auto;
-            height: 100%;
+            height: 3rem;
             display: flex;
             flex-direction: row;
             justify-content: space-around;
             align-items: center;
             background-image: $degradeMarron;
             list-style: none;
-            margin: 0;
+            padding: 0.5%;
             li a{
                 width: 100%;
                 height: 100%;
