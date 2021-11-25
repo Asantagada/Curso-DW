@@ -9,7 +9,7 @@
         font-size: 7rem; 
         font-family: 'Dancing Script', cursive;
         letter-spacing: 0.5vw;
-        background-image: url(multimedia/hojasverdes.jpg);
+        background-image: url(/multimedia/hojasverdes.jpg);
         margin: 0;
         display: flex;
         align-items: center;
@@ -22,28 +22,35 @@
     .header__barraNavegacion{
         width: 100%;
         height: 100%;
-        .header__barraNavegacion__listaNavegacion{
-            width: auto;
-            height: 3rem;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            align-items: center;
-            background-image: $degradeMarron;
-            list-style: none;
-            padding: 0.5%;
-            li a{
+        padding: 0;
+        background-image: $degradeMarron;
+        div{
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            .header__barraNavegacion__listaNavegacion{
                 width: 100%;
-                height: 100%;
-                font-style: italic;
-                text-align:center; 
-                font-size:1.5rem;
-                color: black;
-                transition: font-size 1.5s;
-                font-weight: 400;
-            }
-            li a:hover{ 
-                font-size: 1.8rem;
+                height: 3rem;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                list-style: none;
+                padding: 0.5%;
+                margin: 0;
+                li a{
+                    width: 100%;
+                    height: 100%;
+                    font-style: italic;
+                    text-align:center; 
+                    font-size:1.3rem;
+                    color: black;
+                    transition: font-size 1.5s;
+                    font-weight: 400;
+                }
+                li a:hover{ 
+                    font-size: 1.8rem;
+                }
             }
         }
     }

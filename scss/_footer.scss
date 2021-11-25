@@ -10,7 +10,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-image: repeating-linear-gradient(to bottom, #e06be0 ,rgba(255, 255, 255, 0)) ;
+    background-image: repeating-linear-gradient(to bottom,#b9821b00, #b9821b);
+    // background-image: repeating-linear-gradient(to bottom, #e06be0 ,rgba(255, 255, 255, 0)) ;
     .footer_logo{
         width: 15%;
         border-radius: 50%;
@@ -23,9 +24,9 @@
             height: 40%;
             text-align: center;
             font-size: 3rem;
-            color: white;
+            color: black;
             font-weight: 500;
-            text-shadow: 0.2rem 0.2rem black;
+            text-shadow: 0.2rem 0.2rem white;
         }
         .footer__contacto__redes{
             width:100%;
@@ -37,7 +38,7 @@
             justify-content: space-between;
             font-size: 4rem;
             font-weight: 700;
-            text-shadow: 0.1rem 0.1rem white;
+            text-shadow: 0.1rem 0.1rem black;
             @each $name, $value in $Redes{
                 .fa-#{$name}{
                     color:$value;

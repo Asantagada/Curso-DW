@@ -8,7 +8,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-image: repeating-linear-gradient(to bottom, #e06be0, rgba(255, 255, 255, 0));
+  background-image: repeating-linear-gradient(to bottom, #b9821b00, #b9821b);
 }
 .footer .footer_logo {
   width: 15%;
@@ -23,9 +23,9 @@
   height: 40%;
   text-align: center;
   font-size: 3rem;
-  color: white;
+  color: black;
   font-weight: 500;
-  text-shadow: 0.2rem 0.2rem black;
+  text-shadow: 0.2rem 0.2rem white;
 }
 .footer .footer__contacto .footer__contacto__redes {
   width: 100%;
@@ -37,7 +37,7 @@
   justify-content: space-between;
   font-size: 4rem;
   font-weight: 700;
-  text-shadow: 0.1rem 0.1rem white;
+  text-shadow: 0.1rem 0.1rem black;
 }
 .footer .footer__contacto .footer__contacto__redes .fa-whatsapp {
   color: #18a718;
@@ -61,43 +61,6 @@ body {
   background-image: repeating-linear-gradient(250deg, white, #e06be0);
 }
 
-/* ---------------------------------------------- */
-/* TABLAS */
-.tabla {
-  background-color: rgba(233, 121, 17, 0.726);
-  border-style: dotted;
-  border-color: #2bcc2b;
-}
-.tabla li {
-  list-style: none;
-}
-
-th {
-  border-style: none;
-  border-color: black;
-  font-style: italic;
-  font-size: auto;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-}
-
-td {
-  border-style: none;
-  border-color: black;
-}
-
-.tablasContenido {
-  font-family: "Times New Roman", Times, serif;
-  text-align: center;
-  font-weight: bold;
-  font-size: medium;
-  padding: 1rem;
-  border: 1rem solid transparent;
-  border-image: url(../multimedia/hojasverdes.jpg) 15 round;
-  background-color: #b9821b;
-  overflow: auto;
-  width: 25%;
-}
-
 /* ----------------------------------------------------- */
 .header {
   width: 100%;
@@ -108,7 +71,7 @@ td {
   font-size: 7rem;
   font-family: "Dancing Script", cursive;
   letter-spacing: 0.5vw;
-  background-image: url(multimedia/hojasverdes.jpg);
+  background-image: url(/multimedia/hojasverdes.jpg);
   margin: 0;
   display: flex;
   align-items: center;
@@ -121,29 +84,36 @@ td {
 .header .header__barraNavegacion {
   width: 100%;
   height: 100%;
+  padding: 0;
+  background-image: repeating-linear-gradient(to right, #b9821ba8, #b9821b);
 }
-.header .header__barraNavegacion .header__barraNavegacion__listaNavegacion {
-  width: auto;
+.header .header__barraNavegacion div {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+.header .header__barraNavegacion div .header__barraNavegacion__listaNavegacion {
+  width: 100%;
   height: 3rem;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  background-image: repeating-linear-gradient(to right, rgba(189, 168, 101, 0.459), #b9821b);
   list-style: none;
   padding: 0.5%;
+  margin: 0;
 }
-.header .header__barraNavegacion .header__barraNavegacion__listaNavegacion li a {
+.header .header__barraNavegacion div .header__barraNavegacion__listaNavegacion li a {
   width: 100%;
   height: 100%;
   font-style: italic;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: black;
   transition: font-size 1.5s;
   font-weight: 400;
 }
-.header .header__barraNavegacion .header__barraNavegacion__listaNavegacion li a:hover {
+.header .header__barraNavegacion div .header__barraNavegacion__listaNavegacion li a:hover {
   font-size: 1.8rem;
 }
 
@@ -159,6 +129,7 @@ td {
   font-family: "Dancing Script", cursive;
   font-size: 3rem;
   text-shadow: -0.2rem -0.1px rgba(0, 0, 0, 0.336);
+  margin-bottom: 4%;
 }
 
 /* SECCION 1 DEL MAIN */
@@ -169,7 +140,6 @@ td {
   grid-template-areas: "imagen audio" "imagen texto" "imagen texto";
   grid-template-columns: 50% 50%;
   grid-template-rows: 1fr 2fr 2fr;
-  align-items: center;
   justify-content: center;
 }
 .main__index1 .slide {
@@ -207,7 +177,7 @@ td {
   grid-template-columns: 50% 50%;
   grid-template-rows: 50% 50%;
   justify-content: space-between;
-  background-image: repeating-linear-gradient(to right, rgba(189, 168, 101, 0.459), #b9821b);
+  background-image: repeating-linear-gradient(to right, #b9821ba8, #b9821b);
   font-size: 1.2rem;
   justify-self: auto;
 }
@@ -225,57 +195,32 @@ td {
 
 /* ------------------------------------------------- */
 /* Estilos de la seccion con el main corto */
-.main__corto {
+.main_corto {
   margin: 1% auto;
   width: 100%;
   height: 100%;
 }
-.main__corto .main__corto__p {
+.main_corto .main_corto__p {
   font-style: italic;
   font-size: 1.1rem;
   font-family: "Indie Flower", cursive;
   text-align: center;
   margin: 0;
   padding: 1%;
-  background-image: repeating-linear-gradient(to right, rgba(189, 168, 101, 0.459), #b9821b);
+  background-image: repeating-linear-gradient(to right, #b9821ba8, #b9821b);
   border: 2rem solid;
   border-image: url(/multimedia/hojasverdes.jpg) 25 round;
 }
 
-/* Mobile First */
-@media only screen and (max-width: 768px) {
-  #index2 {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 25% 25% 25% 25%;
-    justify-content: space-evenly;
-    background-image: repeating-linear-gradient(to right, rgba(189, 168, 101, 0.247), #b9821b);
-    border: 1rem solid;
-    border-image: url(../multimedia/hojasverdes.jpg) 20 round;
-    font-size: 1rem;
-    justify-self: auto;
-  }
-
-  #index2 h2 {
-    font-size: 2rem;
-    text-align: center;
-    font-family: "Dancing Script", cursive;
-    padding: 1%;
-  }
-
-  #index2 p {
-    font-style: italic;
-  }
-}
 /* Estilos de la seccion Sobre Nosotras */
 .main__sobreNos__presentacion {
   display: grid;
   grid-template-areas: "foto titulo" "foto texto" "foto texto";
-  grid-template-columns: 40% 60%;
+  grid-template-columns: 30% 70%;
   grid-template-rows: 10% 45% 45%;
   justify-content: center;
   align-items: center;
-  margin: 3% 0;
+  margin: 5% 0;
   height: 30rem;
 }
 .main__sobreNos__presentacion .main__sobreNos__presentacion__img {
@@ -296,7 +241,7 @@ td {
   grid-area: texto;
   text-align: center;
   font-style: italic;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-family: "Indie Flower", cursive;
 }
 
@@ -316,6 +261,8 @@ td {
 .main__formulario #areaDeTexto {
   display: flex;
   flex-direction: column;
+  justify-content: baseline;
+  align-items: baseline;
 }
 .main__formulario .main__formulario__contenedor {
   display: flex;
@@ -325,6 +272,21 @@ td {
 }
 .main__formulario .main__formulario__contenedor .main__formulario__contenedor__botones {
   width: 50%;
+}
+
+/* Mobile First */
+@media only screen and (min-width: 650px) and (max-width: 800px) {
+  .main__index1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2% 5%;
+  }
+
+  .main__index1__audio {
+    padding: 5% auto;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */
