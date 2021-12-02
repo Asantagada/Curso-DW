@@ -111,7 +111,7 @@ body {
   font-size: 1.3rem;
   color: black;
   transition: font-size 1.5s;
-  font-weight: 400;
+  font-weight: 450;
 }
 .header .header__barraNavegacion div .header__barraNavegacion__listaNavegacion li a:hover {
   font-size: 1.8rem;
@@ -275,7 +275,7 @@ body {
 }
 
 /* Mobile First */
-@media only screen and (min-width: 650px) and (max-width: 800px) {
+@media (min-width: 600px) and (max-width: 800px) {
   .main__index1 {
     display: flex;
     flex-direction: column;
@@ -285,7 +285,11 @@ body {
   }
 
   .main__index1__audio {
-    padding: 5% auto;
+    padding-top: 5%;
+  }
+
+  .nav-item {
+    font-size: 1rem;
   }
 }
 
