@@ -1,43 +1,136 @@
 @import "variables";
 
 /* Mobile First */
-@media  (max-width:800px){
-    .main__index1{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 2% 5%;
+// @media (max-width:800px){
+//     .main__index1{
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: center;
+//         align-items: center;
+//         padding: 2% 5%;
+//     }
+//     .main__index1__audio{
+//         padding-top: 5%;
+//     }
+//     .nav-link{
+//         font-size: 1rem !important;
+//     }
+//     .main__index2{
+//         display: block;
+//     }
+//     .footer_logo{
+//         width:25% !important;
+//     }
+//     .footer__contacto{
+//         width:35% !important;
+//         .footer__contacto__redes{
+//             font-size: 3rem !important;
+//             align-items: center !important;
+//         }    
+//     }
+//     .main__sobreNos__presentacion__titulo{
+//         font-size: 2rem !important;
+//     }
+//     .main__sobreNos__presentacion__texto{
+//         font-size: 0.8rem  !important;
+//     }
+//     .main__formulario{
+//         font-size: 0.8rem;
+//     }
+// }
+@media  (min-width:360px) and (max-width: 900px){
+    .header__h1{
+        font-size: 4rem !important;
     }
-    .main__index1__audio{
-        padding-top: 5%;
+    .header__barraNavegacion__listaNavegacion{
+        height: auto !important;
+        display: flex !important;
+        flex-direction:column !important;
     }
-    .nav-link{
-        font-size: 1rem !important;
-    }
-    .main__index2{
-        display: block;
+    .main{
+        padding:0%;
+        margin:0%;
+        text-align: center;
+        .main__index1{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2% 5%;
+            .main__index1__p{
+                font-size: 1.4rem;
+            }
+        }     
+        .main__index2{
+            display: block;
+            .main__index2__contenedores__titulo{
+                font-size:2rem;
+            }
+            .main__index2__contenedores__texto{
+                font-size:1rem;
+            }
+        }
     }
     .footer_logo{
         width:25% !important;
     }
     .footer__contacto{
-        width:35% !important;
+        width:50% !important;
+        .footer__contacto__linkContacto{
+            font-size:2rem !important;
+            text-shadow: none !important;
+        }
         .footer__contacto__redes{
-            font-size: 3rem !important;
+            font-size: 2.3rem !important;
             align-items: center !important;
         }    
     }
-    .main__sobreNos__presentacion__titulo{
-        font-size: 2rem !important;
+    .main__sobreNos__presentacion{
+        grid-template-areas: 
+        "titulo titulo"
+        "foto foto"
+        "texto texto";
+        height: auto;
+        grid-template-rows: 5% 30% 55%;
+        .main__sobreNos__presentacion__titulo{
+            grid-area: titulo;
+            font-size: 2rem !important;
+        }
+        .main__sobreNos__presentacion__img{
+            grid-area: foto;
+            padding:1%;
+        }
+        .main__sobreNos__presentacion__texto{
+            grid-area: texto;
+            padding: 1.5%;
+        }
     }
-    .main__sobreNos__presentacion__texto{
-        font-size: 0.8rem  !important;
-    }
-    .main__formulario{
-        font-size: 0.8rem;
-    }
-
 }
 
+@media  (min-width:700px) and (max-width: 900px){
+    .header__h1{
+        font-size:6rem !important;
+    }
+    .main__index1__p{
+        font-size: 2rem !important;
+    }
+    .main__index2__contenedores__titulo{
+        font-size: 3rem !important;
+    }
+    .main__index2__contenedores__texto{
+        font-size:1.7rem !important;
+    }
+    .footer__contacto__linkContacto{
+        font-size: 4rem !important;
+    }
+    .footer__contacto__redes{
+        font-size: 3rem !important
+    }
+    .main__sobreNos__presentacion__titulo{
+        font-size: 4rem !important;
+    }
+    .main__sobreNos__presentacion__titulo{
+        font-size: 3rem !important;
+    }
+}
 
